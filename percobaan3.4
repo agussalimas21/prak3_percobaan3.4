@@ -11,13 +11,13 @@ ADCSRB = 1;
 ACSR = _BV(ACI) | _BV(ACIE) | _BV(ACIS1);
 lcd.begin(16,2);
 lcd.clear();
-lcd.setCursor(0,0);
+lcd.setCursor(0,1);
 lcd.print("Analog Comparator");
 }
 
 void loop() {
 if (comparatorOutput==true){
-  lcd.setCursor(0,1);
+  lcd.setCursor(0,0);
   lcd.print("Comparator High");
   comparatorOutput = false;
 }
