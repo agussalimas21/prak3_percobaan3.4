@@ -3,7 +3,7 @@ LiquidCrystal lcd(A0,A1,A2,A3,A4,A5);
 boolean comparatorOutput;
 
 ISR (ANALOG_COMP_vect){
-  comparatorOutput = false;
+  comparatorOutput = true;
 }
 
 void setup() {
